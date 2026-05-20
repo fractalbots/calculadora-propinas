@@ -128,6 +128,21 @@ fun CalculadoraPropinasApp() {
                     )
                 }
             }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Botón limpiar
+            OutlinedButton(
+                onClick = {
+                    montoCuenta = ""
+                    porcentajePropina = ""
+                    resultadoPropina = ""
+                    resultadoTotal = ""
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Limpiar")
+            }
         }
     }
 }
